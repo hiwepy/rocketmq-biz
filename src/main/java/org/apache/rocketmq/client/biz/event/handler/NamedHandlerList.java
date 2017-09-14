@@ -1,9 +1,9 @@
-package org.apache.rocketmq.client.biz.handler;
+package org.apache.rocketmq.client.biz.event.handler;
 
 import java.util.List;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChain;
 
 
 public interface NamedHandlerList<T extends RocketmqEvent> extends List<EventHandler<T>> {

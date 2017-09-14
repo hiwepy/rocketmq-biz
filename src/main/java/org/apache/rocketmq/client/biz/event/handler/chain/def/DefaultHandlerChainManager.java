@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.chain.def;
+package org.apache.rocketmq.client.biz.event.handler.chain.def;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
@@ -10,11 +10,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.CollectionUtils;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.EventHandler;
-import org.apache.rocketmq.client.biz.handler.Nameable;
-import org.apache.rocketmq.client.biz.handler.NamedHandlerList;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChain;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChainManager;
+import org.apache.rocketmq.client.biz.event.handler.EventHandler;
+import org.apache.rocketmq.client.biz.event.handler.Nameable;
+import org.apache.rocketmq.client.biz.event.handler.NamedHandlerList;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChainManager;
 import org.apache.rocketmq.client.biz.util.StringUtils;
 
 public class DefaultHandlerChainManager implements HandlerChainManager<RocketmqEvent> {

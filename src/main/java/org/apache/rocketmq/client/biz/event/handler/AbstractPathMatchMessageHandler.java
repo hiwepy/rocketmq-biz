@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler;
+package org.apache.rocketmq.client.biz.event.handler;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.impl;
+package org.apache.rocketmq.client.biz.event.handler.impl;
 
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.common.message.MessageExt;
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.InitializingBean;
 import com.lmax.disruptor.dsl.Disruptor;
 import org.apache.rocketmq.client.biz.disruptor.RocketmqDataEventTranslator;
 import org.apache.rocketmq.client.biz.event.RocketmqDisruptorEvent;
-import org.apache.rocketmq.client.biz.handler.MessageHandler;
+import org.apache.rocketmq.client.biz.event.handler.MessageHandler;
 
 public class DisruptorEventMessageHandler implements MessageHandler, InitializingBean {
 

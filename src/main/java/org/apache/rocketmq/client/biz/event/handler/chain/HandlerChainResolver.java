@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.chain;
+package org.apache.rocketmq.client.biz.event.handler.chain;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
 

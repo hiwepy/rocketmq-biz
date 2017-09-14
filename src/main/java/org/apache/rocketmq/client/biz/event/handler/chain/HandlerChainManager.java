@@ -1,11 +1,11 @@
-package org.apache.rocketmq.client.biz.handler.chain;
+package org.apache.rocketmq.client.biz.event.handler.chain;
 
 import java.util.Map;
 import java.util.Set;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.EventHandler;
-import org.apache.rocketmq.client.biz.handler.NamedHandlerList;
+import org.apache.rocketmq.client.biz.event.handler.EventHandler;
+import org.apache.rocketmq.client.biz.event.handler.NamedHandlerList;
 
 /**
  * HandlerChain管理器，负责创建和维护HandlerChain

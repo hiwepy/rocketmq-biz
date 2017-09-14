@@ -8,13 +8,13 @@ import org.springframework.util.CollectionUtils;
 
 import org.apache.rocketmq.client.biz.config.Ini;
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.AbstractRouteableMessageHandler;
-import org.apache.rocketmq.client.biz.handler.EventHandler;
-import org.apache.rocketmq.client.biz.handler.Nameable;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChainManager;
-import org.apache.rocketmq.client.biz.handler.chain.def.DefaultHandlerChainManager;
-import org.apache.rocketmq.client.biz.handler.chain.def.PathMatchingHandlerChainResolver;
-import org.apache.rocketmq.client.biz.handler.impl.RocketmqEventMessageHandler;
+import org.apache.rocketmq.client.biz.event.handler.AbstractRouteableMessageHandler;
+import org.apache.rocketmq.client.biz.event.handler.EventHandler;
+import org.apache.rocketmq.client.biz.event.handler.Nameable;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChainManager;
+import org.apache.rocketmq.client.biz.event.handler.chain.def.DefaultHandlerChainManager;
+import org.apache.rocketmq.client.biz.event.handler.chain.def.PathMatchingHandlerChainResolver;
+import org.apache.rocketmq.client.biz.event.handler.impl.RocketmqEventMessageHandler;
 
 public class MQEventHandlerFactoryBean implements FactoryBean<EventHandler<RocketmqEvent>> {
 

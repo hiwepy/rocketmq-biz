@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler;
+package org.apache.rocketmq.client.biz.event.handler;
 
 import java.io.IOException;
 
@@ -6,9 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChainResolver;
 import org.apache.rocketmq.client.biz.exception.EventHandleException;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChain;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChainResolver;
 
 public class AbstractRouteableMessageHandler<T extends RocketmqEvent> extends AbstractEnabledMessageHandler<T> {
 

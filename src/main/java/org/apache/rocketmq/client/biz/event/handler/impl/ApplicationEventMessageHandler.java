@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.impl;
+package org.apache.rocketmq.client.biz.event.handler.impl;
 
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.common.message.MessageExt;
@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.MessageHandler;
+import org.apache.rocketmq.client.biz.event.handler.MessageHandler;
 
 public class ApplicationEventMessageHandler implements MessageHandler, ApplicationEventPublisherAware {
 

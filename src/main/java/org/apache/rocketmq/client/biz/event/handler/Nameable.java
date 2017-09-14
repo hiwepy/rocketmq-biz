@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler;
+package org.apache.rocketmq.client.biz.event.handler;
 
 /**
  * 设置一个唯一的名称

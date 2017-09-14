@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.chain.def;
+package org.apache.rocketmq.client.biz.event.handler.chain.def;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,10 +9,10 @@ import java.util.ListIterator;
 import org.apache.commons.lang3.StringUtils;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.EventHandler;
-import org.apache.rocketmq.client.biz.handler.NamedHandlerList;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChain;
-import org.apache.rocketmq.client.biz.handler.chain.ProxiedHandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.EventHandler;
+import org.apache.rocketmq.client.biz.event.handler.NamedHandlerList;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.chain.ProxiedHandlerChain;
 
 public class DefaultNamedHandlerList implements NamedHandlerList<RocketmqEvent> {
 

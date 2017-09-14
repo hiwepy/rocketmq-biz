@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.chain.def;
+package org.apache.rocketmq.client.biz.event.handler.chain.def;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,9 +6,9 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.util.PathMatcher;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChain;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChainManager;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChainResolver;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChainManager;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChainResolver;
 
 public class PathMatchingHandlerChainResolver implements HandlerChainResolver<RocketmqEvent> {
 

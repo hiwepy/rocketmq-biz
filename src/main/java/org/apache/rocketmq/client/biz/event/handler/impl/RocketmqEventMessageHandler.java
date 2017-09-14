@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.impl;
+package org.apache.rocketmq.client.biz.event.handler.impl;
 
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.common.message.MessageExt;
@@ -6,11 +6,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.AbstractRouteableMessageHandler;
-import org.apache.rocketmq.client.biz.handler.MessageHandler;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChain;
-import org.apache.rocketmq.client.biz.handler.chain.HandlerChainResolver;
-import org.apache.rocketmq.client.biz.handler.chain.ProxiedHandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.AbstractRouteableMessageHandler;
+import org.apache.rocketmq.client.biz.event.handler.MessageHandler;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChain;
+import org.apache.rocketmq.client.biz.event.handler.chain.HandlerChainResolver;
+import org.apache.rocketmq.client.biz.event.handler.chain.ProxiedHandlerChain;
 
 public class RocketmqEventMessageHandler extends AbstractRouteableMessageHandler<RocketmqEvent> implements MessageHandler {
 

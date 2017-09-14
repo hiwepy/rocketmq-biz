@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.apache.rocketmq.client.biz.config.ConsumerConfig;
-import org.apache.rocketmq.client.biz.handler.MessageHandler;
+import org.apache.rocketmq.client.biz.event.handler.MessageHandler;
 
 public class DefaultMessageConsumeListener implements MessageListenerConcurrently {
 

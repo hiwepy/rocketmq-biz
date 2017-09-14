@@ -5,6 +5,7 @@ import java.io.UnsupportedEncodingException;
 import org.apache.rocketmq.common.message.MessageExt;
 
 import com.lmax.disruptor.biz.event.DisruptorEvent;
+
 import org.apache.rocketmq.client.biz.util.StringUtils;
 
 @SuppressWarnings("serial")

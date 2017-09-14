@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler;
+package org.apache.rocketmq.client.biz.event.handler;
 
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.common.message.MessageExt;

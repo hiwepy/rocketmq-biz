@@ -1,4 +1,4 @@
-package org.apache.rocketmq.client.biz.handler.chain;
+package org.apache.rocketmq.client.biz.event.handler.chain;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.apache.rocketmq.client.biz.event.RocketmqEvent;
-import org.apache.rocketmq.client.biz.handler.EventHandler;
+import org.apache.rocketmq.client.biz.event.handler.EventHandler;
 
 public class ProxiedHandlerChain implements HandlerChain<RocketmqEvent> {
 
