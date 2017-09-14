@@ -6,6 +6,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.rocketmq.client.biz.config.ConsumerConfig;
+import org.apache.rocketmq.client.biz.exception.RocketMQException;
+import org.apache.rocketmq.client.biz.hooks.MQPushConsumerShutdownHook;
 import org.apache.rocketmq.client.consumer.AllocateMessageQueueStrategy;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.MQPushConsumer;
@@ -19,10 +22,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.CollectionUtils;
-
-import org.apache.rocketmq.client.biz.config.ConsumerConfig;
-import org.apache.rocketmq.client.biz.exception.RocketMQException;
-import org.apache.rocketmq.client.biz.hooks.MQPushConsumerShutdownHook;
 
 
 public class MQPushConsumerFactoryBean implements FactoryBean<MQPushConsumer>, InitializingBean  {
@@ -142,6 +141,31 @@ public class MQPushConsumerFactoryBean implements FactoryBean<MQPushConsumer>, I
 					 * entry.getValue() : 根据实际情况设置消息的tag 
 					 */
 					consumer.subscribe(entry.getKey(), entry.getValue());
+					
+					/**
+			         * 使用Java代码，在服务器做消息过滤
+			        consumer.subscribe(entry.getKey(), "MessageFilterImpl" ,
+			        		"import com.alibaba.rocketmq.common.filter.MessageFilter;\n" +
+			                "import com.alibaba.rocketmq.common.message.MessageExt;\n" +
+			                "\n" +
+			                "\n" +
+			                "public class MessageFilterImpl implements MessageFilter {\n" +
+			                "\n" +
+			                "    @Override\n" +
+			                "    public boolean match(MessageExt msg) {\n" +
+			                "        String property = msg.getUserProperty(\"SequenceId\");\n" +
+			                "        if (property != null) {\n" +
+			                "            int id = Integer.parseInt(property);\n" +
+			                "            if ((id % 3) == 0 && (id > 10)) {\n" +
+			                "                return true;\n" +
+			                "            }\n" +
+			                "        }\n" +
+			                "\n" +
+			                "        return false;\n" +
+			                "    }\n" +
+			                "}");
+		          */
+					
 				}
 				
 			}
