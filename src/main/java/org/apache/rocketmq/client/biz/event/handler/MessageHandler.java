@@ -8,10 +8,7 @@ import org.apache.rocketmq.common.message.MessageExt;
 public interface MessageHandler {
 	
     /**
-     * 
-     * @description	： 处理消息的接口
-     * @author 		： 万大龙（743）
-     * @date 		：2017年9月5日 上午11:09:13
+     *  处理消息的接口
      * @param msgExt 消息对象
      * @param context 上下文
      * @return 是否处理完成
