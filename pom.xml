@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.vindell</groupId>
 	<artifactId>rocketmq-biz</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	
 	<name>Rocketmq Event Chain Integration</name>
 	<description>Rocketmq Event Chain</description>
@@ -258,7 +258,7 @@
  		<servlet-api.version>3.0.1</servlet-api.version>
  		<slf4j.version>1.7.21</slf4j.version>
  		<disruptor-biz.version>1.0.0.RELEASE</disruptor-biz.version>
- 		<rocketmq.version>4.1.0-incubating</rocketmq.version>  
+ 		<rocketmq.version>4.5.2</rocketmq.version>  
  		<spring.version>4.3.11.RELEASE</spring.version><!-- 4.3.x（JDK 1.7 ）、4.1.x（JDK 1.6）、4.0.x（JDK 1.6） -->
 	</properties>
 	
