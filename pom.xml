@@ -259,7 +259,7 @@
  		<slf4j.version>1.7.21</slf4j.version>
  		<disruptor-biz.version>1.0.0.RELEASE</disruptor-biz.version>
  		<rocketmq.version>4.5.2</rocketmq.version>  
- 		<spring.version>4.3.11.RELEASE</spring.version><!-- 4.3.x（JDK 1.7 ）、4.1.x（JDK 1.6）、4.0.x（JDK 1.6） -->
+ 		<spring.version>5.2.1.RELEASE</spring.version><!-- 4.3.x（JDK 1.7 ）、4.1.x（JDK 1.6）、4.0.x（JDK 1.6） -->
 	</properties>
 	
 	<dependencyManagement>
